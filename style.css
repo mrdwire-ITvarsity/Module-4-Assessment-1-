@@ -1,0 +1,1325 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgb(0, 98, 255);
+}
+
+
+.fun-pop {
+    background-image: url(img/Tile-Drop-1.png);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+}
+
+/*re-usable*/
+/*e1fb04 (yellow)*/
+ /*rgba(45, 4, 251, 0.89); (blue)*/
+
+
+/*====================================================================================================================================*/
+/*LOGO*/
+/*====================================================================================================================================*/
+
+#logo {
+    margin: auto;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 5px 10px 5px white;
+}
+
+.tile h2 {
+    text-align: center;
+    text-transform: uppercase;
+
+    font-family: cursive;
+    text-shadow: 2px 4px white;
+    font-size: 45px;
+    margin-top: -1190px;
+    background: linear-gradient(rgba(0, 255, 39, 0.8), rgba(255, 255, 255, 0.8), rgba(7, 47, 181, 0.8));
+}
+
+/*====================================================================================================================================*/
+/*STYLE-DROP AREA*/
+/*====================================================================================================================================*/
+
+#drop {
+    width: 65%;
+    margin: auto;
+    margin-top: 460px;
+    display: block;
+
+
+    box-shadow: 15px 15px 10px white;
+}
+
+/*====================================================================================================================================*/
+/*DRESS UP PIECES GROUPINGS*/
+/*====================================================================================================================================*/
+
+.eyes {
+    position: relative;
+    display: inline-block;
+    width: 5%;
+    top: -32px;
+    left: 5px;
+
+    background-color: rgba(253, 214, 0, 0.93);
+    border-style: outset;
+
+
+}
+
+.eyes img {
+    margin-left: -20px;
+}
+
+.express {
+    position: absolute;
+    width: 6%;
+    top: 202px;
+    left: 81px;
+
+
+    background-color: rgb(37, 251, 2);
+    border-style: outset;
+   
+}
+
+.express img {
+    float: right;
+    display: inline-block;
+    margin-top: -50px;
+    margin-bottom: -55px;
+
+
+}
+
+.glass {
+    position: absolute;
+    width: 7%;
+    right: 0px;
+    margin-top: -85px;
+
+
+
+}
+
+.glass img {
+    float: right;
+
+    display: block;
+    margin-top: -60px;
+
+}
+
+.mouth {
+    position: absolute;
+    width: 4.5%;
+    
+    bottom: -1370px;
+   margin-left: 5px;
+
+
+    background-color: rgb(255, 255, 255);
+    padding-right: 2px;
+    border-style: outset;
+}
+
+.mouth img {
+    margin: auto;
+    float: right;
+    display: inline-block;
+    vertical-align: middle;
+
+
+}
+
+.face {
+    position: absolute;
+    display: inline-block;
+    width: 5%;
+    top: 930px;
+    left: 5px;
+
+    background-color: rgba(252, 252, 252, 0.89);
+    border-style: outset;
+}
+
+.hand {
+    position: relative;
+    width: 6%;
+    top: -80px;
+    left: 1250px;
+
+    background-color: rgba(0, 253, 58, 0.69);
+    border-style: outset;
+
+
+
+}
+
+.hand img {
+    margin-top: -40px;
+    display: inline-block;
+    margin-bottom: -25px;
+
+}
+
+.legs {
+    position: relative;
+    width: 6%;
+    bottom: 75px;
+    left: 1250px;
+
+    background-color: rgba(253, 0, 0, 0.73);
+    border-style: outset;
+
+
+}
+
+.legs img {
+    margin-top: -40px;
+    margin-bottom: -40px;
+    display: inline-block;
+
+}
+
+.shoes {
+    position: absolute;
+    width: 16%;
+    right: 8px;
+    top: 202px;
+
+    background-color: rgba(97, 0, 253, 0.83);
+    border-style: outset;
+
+
+}
+
+.shoes img {
+    margin-top: -30px;
+
+    display: inline-block;
+    padding-left: -20px;
+    margin-left: -15px;
+
+
+}
+
+.faces {
+    position: absolute;
+    width: 65%;
+    margin-left: 232px;
+    top: 380px;
+    background-color: rgba(45, 4, 251, 0.89);
+    border-style: outset;
+
+}
+
+.faces img {
+    margin-top: -45px;
+    margin-left: -30px;
+    display: inline-block;
+    margin-bottom: -35px;
+    padding-top: 10px;
+
+}
+
+.cloths {
+    position: absolute;
+    display: inline-block;
+    width: 70%;
+    top: 1388px;
+    right: 180px;
+
+    background-color: rgba(253, 214, 0, 0.69);
+    border-style: outset;
+}
+
+.cloths img {
+    margin-left: -50px;
+    margin-bottom: -20px;
+    margin-top: -50px;
+}
+
+.hair {
+    position: relative;
+    width: 75%;
+    margin-top: -350px;
+    margin-left: 222px;
+    background-color: rgba(19, 0, 253, 0.53);
+    border-style: outset;
+}
+
+.hair img {
+    margin-bottom: -40px;
+    margin-top: -50px;
+
+}
+
+.hats {
+    position: absolute;
+    width: 9%;
+    bottom: -922px;
+    left: 85px;
+
+    background-color: rgba(253, 214, 0, 0.69);
+    border-style: outset;
+
+}
+
+.hats img {
+    display: inline-block;
+
+}
+
+
+
+/*====================================================================================================================================*/
+/*DRAGGABLE PIECES*/
+/*====================================================================================================================================*/
+/*==========================================================*/
+/*DRESS UP CHARACTERS*/
+/*==========================================================*/
+
+#figure-3-draggable {
+    transform: scale(0.2);
+    position: absolute;
+    top: 60px;
+    left: 30px;
+
+}
+
+#figure-6-draggable {
+    transform: scale(0.3);
+    position: absolute;
+    top: 120px;
+    left: 210px;
+
+}
+
+#figure-8-draggable {
+    transform: scale(0.3);
+    position: absolute;
+    top: 168px;
+    left: 290px;
+
+
+}
+
+#figure-9-draggable {
+    transform: scale(0.2);
+    position: absolute;
+    top: 193px;
+    left: 310px;
+
+}
+
+#figure-13-draggable {
+    transform: scale(0.3);
+    position: absolute;
+    top: 155px;
+    left: 470px;
+
+}
+
+#figure-11-draggable {
+    transform: scale(0.3);
+    position: absolute;
+    top: 106px;
+    left: 500px;
+
+}
+
+#figure-12-draggable {
+    transform: scale(0.3);
+    position: absolute;
+    top: 110px;
+    left: 570px;
+
+}
+
+#figure-14-draggable {
+    transform: scale(0.3);
+    position: absolute;
+    top: 110px;
+    left: 655px;
+
+}
+
+#figure-15-draggable {
+    transform: scale(0.4);
+    position: absolute;
+    top: 155px;
+    right: 330px;
+
+}
+
+#figure-17-draggable {
+    transform: scale(0.3);
+    position: absolute;
+    top: 137px;
+    right: 230px;
+
+}
+
+#figure-20-draggable {
+    transform: scale(0.3);
+    position: absolute;
+    top: 135px;
+    right: 145px;
+
+}
+
+/*==========================================================*/
+/*EYES-FACIAL EXPRESSIONS-GLASEES*/
+/*==========================================================*/
+
+#eyes_01-draggable {
+    transform: scale(0.5);
+    padding-left: 15px;
+
+}
+
+#eyes_02-draggable {
+    transform: scale(0.5);
+    padding-left: 15px;
+
+
+}
+
+#eyes_03-draggable {
+    transform: scale(0.5);
+    padding-left: 15px;
+
+
+}
+
+#eyes_04-draggable {
+    transform: scale(0.5);
+    padding-right: 25px;
+
+
+}
+
+#eyes_05-draggable {
+    transform: scale(0.5);
+    padding-left: 15px;
+
+
+}
+
+#eyes_06-draggable {
+    transform: scale(0.5);
+    padding-left: 15px;
+
+
+}
+
+#eyes_07-draggable {
+    transform: scale(0.5);
+    padding-left: 15px;
+
+
+}
+
+#eyes_08-draggable {
+    transform: scale(0.5);
+    padding-left: 15px;
+
+
+}
+
+#eyes_09-draggable {
+    transform: scale(0.5);
+    padding-left: 15px;
+
+
+}
+
+#eyes_11-draggable {
+    transform: scale(0.5);
+    padding-left: 15px;
+
+
+}
+
+#eyes_12-draggable {
+    transform: scale(0.5);
+    padding-left: 15px;
+
+
+}
+
+#eyes_13-draggable {
+    transform: scale(0.5);
+    padding-left: 15px;
+
+
+}
+
+#eyes_14-draggable {
+    transform: scale(0.5);
+    padding-left: 15px;
+
+
+}
+
+#eyes_15-draggable {
+    transform: scale(0.5);
+    padding-left: 15px;
+
+
+}
+
+#eyes_16-draggable {
+    transform: scale(0.5);
+    padding-left: 15px;
+
+}
+
+/*==========================================================*/
+/*EXPRESSIONS*/
+/*==========================================================*/
+
+#E-2-draggable {
+    transform: scale(0.25);
+    margin-right: -40px;
+    margin-bottom: -80px;
+
+}
+
+#E-3-draggable {
+    transform: scale(0.25);
+    margin-right: -30px;
+    margin-bottom: -50px;
+
+
+
+}
+
+#E-4-draggable {
+    transform: scale(0.25);
+    margin-right: -25px;
+    margin-top: -60px;
+
+}
+
+#E-5-draggable {
+    transform: scale(0.25);
+    margin-right: -20px;
+    margin-bottom: -80px;
+}
+
+#E-6-draggable {
+    transform: scale(0.25);
+    margin-right: -35px;
+}
+
+#E-7-draggable {
+    transform: scale(0.25);
+    margin-right: -35px;
+}
+
+#E-8-draggable {
+    transform: scale(0.25);
+    margin-right: -35px;
+}
+
+#E-9-draggable {
+    transform: scale(0.25);
+    margin-right: -10px;
+    margin-bottom: -50px;
+}
+
+#E-10-draggable {
+    transform: scale(0.25);
+    margin-right: -25px;
+    margin-bottom: -70px;
+
+
+}
+
+#E-11-draggable {
+    transform: scale(0.25);
+    margin-right: -35px;
+}
+
+#E-12-draggable {
+    transform: scale(0.25);
+    margin-right: -15px;
+    margin-bottom: -35px;
+
+}
+
+#E-13-draggable {
+    transform: scale(0.25);
+    margin-right: -25px;
+    margin-bottom: -50px;
+}
+
+/*==========================================================*/
+/*GLASSES*/
+/*==========================================================*/
+#glasses-1-draggable {
+    transform: scale(0.2);
+    margin-bottom: -60px;
+
+}
+
+#glasses-2-draggable {
+    transform: scale(0.2);
+    margin-bottom: -60px;
+}
+
+#glasses-3-draggable {
+    transform: scale(0.2);
+    margin-bottom: -60px;
+}
+
+#glasses-4-draggable {
+    transform: scale(0.2);
+    margin-bottom: -60px;
+}
+
+#glasses-5-draggable {
+    transform: scale(0.2);
+    margin-bottom: -60px;
+}
+
+#glasses-6-draggable {
+    transform: scale(0.2);
+    margin-bottom: -60px;
+}
+
+#glasses-7-draggable {
+    transform: scale(0.2);
+    margin-bottom: -60px;
+}
+
+#glasses-8-draggable {
+    transform: scale(0.2);
+    margin-bottom: -60px;
+}
+
+#glasses-11-draggable {
+    transform: scale(0.2);
+    margin-bottom: -20px;
+}
+
+#glasses-12-draggable {
+    transform: scale(0.2);
+    margin-right: 15px;
+    margin-bottom: -15px;
+}
+
+#glasses-13-draggable {
+    transform: scale(0.2);
+    margin-bottom: -20px;
+}
+
+#glasses-14-draggable {
+    transform: scale(0.2);
+    margin-right: 20px;
+}
+
+/*==========================================================*/
+/*MOUTH*/
+/*==========================================================*/
+
+#mouth_01-draggable {
+    transform: scale(0.5);
+}
+
+#mouth_02-draggable {
+    transform: scale(0.5);
+}
+
+#mouth_03-draggable {
+    transform: scale(0.5);
+}
+
+#mouth_04-draggable {
+    transform: scale(0.6);
+    padding-right: 15px;
+}
+
+#mouth_05-draggable {
+    transform: scale(0.5);
+}
+
+#mouth_06-draggable {
+    transform: scale(0.5);
+}
+
+#mouth_07-draggable {
+    transform: scale(0.5);
+}
+
+#mouth_08-draggable {
+    transform: scale(0.5);
+}
+
+#mouth_10-draggable {
+    transform: scale(0.5);
+}
+
+#mouth_11-draggable {
+    transform: scale(0.5);
+}
+
+#mouth_12-draggable {
+    transform: scale(0.5);
+}
+
+#mouth_13-draggable {
+    transform: scale(0.5);
+}
+
+#mouth_14-draggable {
+    transform: scale(0.5);
+}
+
+#mouth_15-draggable {
+    transform: scale(0.5);
+}
+
+#mouth_16-draggable {
+    transform: scale(0.5);
+}
+
+#mouth_17-draggable {
+    transform: scale(0.5);
+}
+
+#mouth_18-draggable {
+    transform: scale(0.5);
+
+
+}
+
+#mouth_19-draggable {
+    transform: scale(0.5);
+}
+
+/*==========================================================*/
+/*FACE-HAIR*/
+/*==========================================================*/
+
+#face-hair_01-draggable {
+    transform: scale(0.6);
+    padding-top: 10px;
+}
+
+#face-hair_02-draggable {
+    transform: scale(0.6);
+}
+
+#face-hair_03-draggable {
+    transform: scale(0.6);
+}
+
+#face-hair_04-draggable {
+    transform: scale(0.6);
+}
+
+#face-hair_05-draggable {
+    transform: scale(0.6);
+}
+
+#face-hair_06-draggable {
+    transform: scale(0.6);
+}
+
+#face-hair_07-draggable {
+    transform: scale(0.6);
+}
+
+/*==========================================================*/
+/*HANDS-LEGS*/
+/*==========================================================*/
+
+
+
+#hand-1-draggable {
+    transform: scale(0.4);
+    margin-left: -35px;
+
+
+
+}
+
+#hand-2-draggable {
+    transform: scale(0.4);
+    margin-left: -30px;
+
+}
+
+#hand-3-draggable {
+    transform: scale(0.4);
+    margin-left: -20px;
+
+}
+
+#hand-4-draggable {
+    transform: scale(0.4);
+    margin-left: -25px;
+
+}
+
+#hand-5-draggable {
+    transform: scale(0.4);
+    margin-left: -15px;
+
+}
+
+#hand-6-draggable {
+    transform: scale(0.4);
+    margin-left: -25px;
+}
+
+#hand-7-draggable {
+    transform: scale(0.4);
+    margin-left: -45px;
+
+}
+
+#hand-8-draggable {
+    transform: scale(0.4);
+    margin-left: -40px;
+
+}
+
+
+#L-1-draggable {
+    transform: scale(0.4);
+    margin-left: -20px;
+}
+
+#L-2-draggable {
+    transform: scale(0.4);
+    margin-left: 0;
+}
+
+#L-3-draggable {
+    transform: scale(0.4);
+    margin-left: 0px;
+}
+
+#L-4-draggable {
+    transform: scale(0.4);
+    margin-left: 0;
+}
+
+#L-5-draggable {
+    transform: scale(0.4);
+    margin-left: -10px;
+}
+
+#L-6-draggable {
+    transform: scale(0.4);
+    margin-left: -30px;
+}
+
+#L-7-draggable {
+    transform: scale(0.4);
+    margin-left: -30px;
+}
+
+#L-8-draggable {
+    transform: scale(0.4);
+    margin-left: -30px;
+}
+
+/*==========================================================*/
+/*SHOES*/
+/*==========================================================*/
+#burger-left-draggable {
+    transform: scale(0.3);
+    margin-left: -80px;
+    margin-top: -80px;
+
+}
+
+#burger-right-draggable {
+    transform: scale(0.3);
+    margin-top: -110px;
+
+
+}
+
+#clown-left-draggable {
+    transform: scale(0.3);
+    margin-left: -80px;
+    margin-top: -30px;
+
+
+}
+
+#clown-right-draggable {
+    transform: scale(0.3);
+    margin-left: -10px;
+    margin-top: -115px;
+
+
+}
+
+#left-shoes-1-draggable {
+    transform: scale(0.4);
+
+
+
+}
+
+#right-shoes-1-draggable {
+    transform: scale(0.4);
+    margin-left: -60px;
+
+}
+
+#shoe-left-draggable {
+    transform: scale(0.5);
+    margin-left: -50px;
+
+}
+
+#shoe-right-draggable {
+    transform: scale(0.5);
+    margin-left: -45px;
+
+}
+
+#sneak-left-1-draggable {
+    transform: scale(0.5);
+    margin-left: -30px;
+
+
+}
+
+#sneak-right-1-draggable {
+    transform: scale(0.5);
+    margin-left: -95px;
+
+}
+
+#sneak-left-2-draggable {
+    transform: scale(0.5);
+    margin-left: -40px;
+
+
+}
+
+#sneak-right-2-draggable {
+    transform: scale(0.5);
+    margin-left: -85px;
+
+}
+
+#takkie2-right-draggable {
+    transform: scale(0.5);
+    margin-left: -65px;
+
+
+}
+
+#takkie2-left-draggable {
+    transform: scale(0.5);
+
+
+}
+
+#takkie-left-draggable {
+    transform: scale(0.5);
+}
+
+#takkie-right-draggable {
+    transform: scale(0.5);
+    margin-left: -80px;
+
+}
+
+/*==========================================================*/
+/*FACES*/
+/*==========================================================*/
+
+#F-1-draggable {
+    transform: scale(0.4);
+}
+
+#F-2-draggable {
+    transform: scale(0.4);
+}
+
+#F-3-draggable {
+    transform: scale(0.4);
+}
+
+#F-4-draggable {
+    transform: scale(0.4);
+}
+
+#F-5-draggable {
+    transform: scale(0.4);
+}
+
+#F-6-draggable {
+    transform: scale(0.4);
+}
+
+#F-7-draggable {
+    transform: scale(0.4);
+}
+
+#F-8-draggable {
+    transform: scale(0.4);
+}
+
+#F-9-draggable {
+    transform: scale(0.4);
+}
+
+#F-10-draggable {
+    transform: scale(0.4);
+}
+
+#F-11-draggable {
+    transform: scale(0.4);
+}
+
+#F-13-draggable {
+    transform: scale(0.4);
+}
+
+#F-14-draggable {
+    transform: scale(0.4);
+}
+
+#F-15-draggable {
+    transform: scale(0.4);
+}
+
+#F-16-draggable {
+    transform: scale(0.4);
+}
+
+#F-17-draggable {
+    transform: scale(0.4);
+}
+
+#F-18-draggable {
+    transform: scale(0.4);
+}
+
+#F-19-draggable {
+    transform: scale(0.4);
+}
+
+#F-20-draggable {
+    transform: scale(0.4);
+}
+
+#F-21-draggable {
+    transform: scale(0.4);
+}
+
+#F-22-draggable {
+    transform: scale(0.4);
+}
+
+#F-23-draggable {
+    transform: scale(0.4);
+}
+
+#F-24-draggable {
+    transform: scale(0.4);
+}
+
+#F-25-draggable {
+    transform: scale(0.4);
+}
+
+#F-26-draggable {
+    transform: scale(0.4);
+}
+
+#F-27-draggable {
+    transform: scale(0.4);
+}
+
+#F-28-draggable {
+    transform: scale(0.4);
+}
+
+/*==========================================================*/
+/*CLOTHS*/
+/*==========================================================*/
+#C-1-draggable {
+    transform: scale(0.3);
+    margin-left: -130px;
+
+}
+
+#C-2-draggable {
+    transform: scale(0.3);
+    margin-top: -80px;
+}
+
+#C-3-draggable {
+    transform: scale(0.3);
+
+
+
+}
+
+#C-4-draggable {
+    transform: scale(0.3);
+    margin-left: -110px;
+}
+
+#C-5-draggable {
+    transform: scale(0.3);
+    margin-left: -115px;
+}
+
+#C-6-draggable {
+    transform: scale(0.3);
+    margin-left: -115px;
+}
+
+#C-7-draggable {
+    transform: scale(0.3);
+    margin-left: -110px;
+
+}
+
+#C-8-draggable {
+    transform: scale(0.3);
+    margin-left: -110px;
+}
+
+#C-9-draggable {
+    transform: scale(0.7);
+    margin-left: -115px;
+
+}
+
+#C10-draggable {
+    transform: scale(0.5);
+    margin-left: -80px;
+}
+
+#pants_01-draggable {
+    transform: scale(0.3);
+    margin-left: -90px;
+}
+
+#pants_02-draggable {
+    transform: scale(0.3);
+    margin-left: -85px;
+
+}
+
+#pants_03-draggable {
+    transform: scale(0.3);
+    margin-left: -80px;
+}
+
+#pants_04-draggable {
+    transform: scale(0.3);
+    margin-left: -80px;
+}
+
+#pants_05-draggable {
+    transform: scale(0.3);
+    margin-left: -80px;
+}
+
+#shirt_01-draggable {
+    transform: scale(0.3);
+    margin-left: -100px;
+}
+
+#shirt_02-draggable {
+    transform: scale(0.3);
+    margin-left: -140px;
+
+}
+
+#shirt_03-draggable {
+    transform: scale(0.3);
+    margin-left: -140px;
+}
+
+#shirt_04-draggable {
+    transform: scale(0.3);
+    margin-left: -140px;
+}
+
+#shirt_05-draggable {
+    transform: scale(0.3);
+    margin-left: -140px;
+}
+
+/*==========================================================*/
+/*HAIR*/
+/*==========================================================*/
+
+#H-1-draggable {
+    transform: scale(0.3);
+    margin-left: -100px;
+}
+
+#H-2-draggable {
+    transform: scale(0.3);
+    margin-left: -150px;
+
+}
+
+#H-3-draggable {
+    transform: scale(0.3);
+    margin-left: -80px;
+}
+
+#H-4-draggable {
+    transform: scale(0.3);
+
+    margin-left: -150px;
+}
+
+#H-5-draggable {
+    transform: scale(0.3);
+
+    margin-left: -200px;
+
+}
+
+#H-6-draggable {
+    transform: scale(0.3);
+
+    margin-left: -190px;
+}
+
+#H-7-draggable {
+    transform: scale(0.5);
+    margin-left: -135px;
+}
+
+#H-8-draggable {
+    transform: scale(0.5);
+    margin-left: -90px;
+}
+
+#H-9-draggable {
+    transform: scale(0.5);
+    margin-left: -90px;
+}
+
+#H-10-draggable {
+    transform: scale(0.5);
+    margin-left: -50px;
+}
+
+#H-11-draggable {
+    transform: scale(0.5);
+    margin-left: -50px;
+}
+
+#H-13-draggable {
+    transform: scale(0.4);
+    margin-left: -130px;
+}
+
+#H-14-draggable {
+    transform: scale(0.3);
+    margin-left: -130px;
+}
+
+#H-15-draggable {
+    transform: scale(0.3);
+    margin-left: -110px;
+}
+
+#H-16-draggable {
+    transform: scale(0.3);
+    margin-left: -110px;
+}
+
+#H-17-draggable {
+    transform: scale(0.3);
+    margin-left: -110px;
+}
+
+#H-18-draggable {
+    transform: scale(0.3);
+    margin-left: -110px;
+}
+
+#H-19-draggable {
+    transform: scale(0.3);
+    margin-left: -190px;
+}
+
+/*==========================================================*/
+/*HATS*/
+/*==========================================================*/
+
+#hat-1-draggable {
+    transform: scale(0.3);
+    margin-top: -50px;
+    margin-left: -75px;
+}
+
+#hat-2-draggable {
+    transform: scale(0.3);
+    margin-left: -50px;
+    margin-top: -100px;
+}
+
+#hat-3-draggable {
+    transform: scale(0.3);
+    margin-top: -120px;
+    margin-left: -75px;
+
+}
+
+#hat-4-draggable {
+    transform: scale(0.3);
+    margin-top: -120px;
+    margin-left: -75px;
+}
+
+#hat-5-draggable {
+    transform: scale(0.3);
+    margin-top: -100px;
+    margin-left: -45px;
+}
+
+#hat-6-draggable {
+    transform: scale(0.3);
+    margin-top: -90px;
+    margin-left: -45px;
+
+}
+
+#hat-7-draggable {
+    transform: scale(0.3);
+    margin-top: -90px;
+    margin-left: -90px;
+}
+
+#hat-8-draggable {
+    transform: scale(0.3);
+    margin-top: -90px;
+    margin-left: -65px;
+}
+
+#hat-9-draggable {
+    transform: scale(0.3);
+    margin-top: -65px;
+    margin-left: -40px;
+}
